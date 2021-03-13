@@ -9,12 +9,15 @@ function App() {
     fetch("https://restcountries.eu/rest/v2/all")
     .then(res=>res.json())
     .then(data=>setContries(data))
+    .catch(error=>console.log(error))
   },[])
   return (
     <div className="App">
       
-       <h2>{countries.length}</h2>
+       <h2>Total Countries = {countries.length}</h2>
+       <ul>
        {countries.map(country=><li>{country.name} <img src={country.flag}></img></li> )}
+       </ul>
        
       
     </div>
