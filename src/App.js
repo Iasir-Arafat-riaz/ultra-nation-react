@@ -16,7 +16,7 @@ function App() {
       
        <h2>Total Countries = {countries.length}</h2>
        <ul>
-       {countries.map(country=><li>{country.name} <img src={country.flag}></img></li> )}
+       {countries.map(country=><li>{country.name} </li> )}
        </ul>
        
       
