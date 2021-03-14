@@ -13,11 +13,12 @@ useEffect(()=>{
   
 },[])
 console.log(countries)
+const addEventHandler=(country)=>console.log(country)
  return (<div>
-   <h1>total countries : {countries.length}</h1>
-   <ul>
-     {countries.map(country=><Country name={country.name} capital={country.capital} flag={country.flag}></Country>)}
-   </ul>
+   <h1 style={{textAlign:"center"}}>total countries : {countries.length}</h1>
+   
+     {countries.map(country=><Country country={country} addEventHandler={addEventHandler} key={country.numericCode}></Country>)}
+   
  </div>)
   
 
