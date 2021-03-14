@@ -17,9 +17,11 @@ const[cart,setCart]=useState([])
 
 console.log(countries)
 const addEventHandler=(country)=>{
-  console.log(country)
+  const newCart=[...cart,country]
+
 }
  return (<div>
+   <h2>{cart.length}</h2>
    <h1 style={{textAlign:"center"}}>total countries : {countries.length}</h1>
    
      {countries.map(country=><Country country={country} addEventHandler={addEventHandler} key={country.numericCode}></Country>)}
