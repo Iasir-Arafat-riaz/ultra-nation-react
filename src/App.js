@@ -21,4 +21,13 @@ function App() {
   );
 }
 
+const Country =()=>{
+  return (<div>
+    <h2>Total Countries = {countries.length}</h2>
+       <ul>
+       {countries.map(country=><li>{country.name} </li> )}
+       </ul>
+  </div>)
+}
+
 export default App;
