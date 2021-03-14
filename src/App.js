@@ -16,7 +16,9 @@ useEffect(()=>{
 const[cart,setCart]=useState([])
 
 console.log(countries)
-const addEventHandler=(country)=>console.log(country)
+const addEventHandler=(country)=>{
+  console.log(country)
+}
  return (<div>
    <h1 style={{textAlign:"center"}}>total countries : {countries.length}</h1>
    
