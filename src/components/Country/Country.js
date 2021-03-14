@@ -3,7 +3,7 @@ import "./Country.css"
 
 const Country = (props) => {
   console.log(props)
-  const {name,capital,flag}=props.country
+  const {name,capital,flag,nativeName}=props.country
   // const addEventHandler=props.addEventHandler
 
   
@@ -17,7 +17,7 @@ const Country = (props) => {
       
       
       <div>
-        <button onClick={()=>props.addEventHandler(props.country.nativeName)}>Click Here</button>
+        <button onClick={()=>props.addEventHandler(nativeName)}>Click Here</button>
       </div>
     </div>
     

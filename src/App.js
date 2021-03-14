@@ -11,7 +11,10 @@ useEffect(()=>{
   .then(res=>res.json())
   .then(data=>setCountries(data))
   
-},[])
+},[]);
+
+const[cart,setCart]=useState([])
+
 console.log(countries)
 const addEventHandler=(country)=>console.log(country)
  return (<div>
