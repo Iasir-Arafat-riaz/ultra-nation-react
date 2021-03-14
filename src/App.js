@@ -14,10 +14,7 @@ function App() {
   return (
     <div className="App">
       
-       <h2>Total Countries = {countries.length}</h2>
-       <ul>
-       {countries.map(country=><li>{country.name} </li> )}
-       </ul>
+       
        
       
     </div>
