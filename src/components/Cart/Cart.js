@@ -12,9 +12,9 @@ const Cart = (props) => {
     // }
     //Alternative Way
     const populations=crt.reduce((sum,exmpl) => sum+exmpl.population,0)
-    
+
     return (
-        <div>
+        <div style={{backgroundColor:"skyBlue"}}>
             <h4>this is cart {crt.length}</h4>
             <p>total population ={populations}</p>
         </div>
