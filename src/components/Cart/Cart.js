@@ -8,9 +8,11 @@ const Cart = (props) => {
     // for (let i = 0; i < crt.length; i++) {
     //     const country = crt[i];
     //     populations= populations+country.population;
-    
         
-    }
+    // }
+    //Alternative Way
+    const populations=crt.reduce((sum,exmpl) => sum+exmpl.population,0)
+    
     return (
         <div>
             <h4>this is cart {crt.length}</h4>
