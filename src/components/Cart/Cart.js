@@ -17,7 +17,7 @@ const Cart = (props) => {
         <div style={{backgroundColor:"skyBlue"}}>
             <h4>this is cart {crt.length}</h4>
             <p>total population ={populations}</p>
-            <button>add</button>
+            
         </div>
     );
 };
