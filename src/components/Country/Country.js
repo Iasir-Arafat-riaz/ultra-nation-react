@@ -19,7 +19,7 @@ const Country = (props) => {
       
       <div>
         <button onClick={()=>props.addEventHandler(props.country)} class="btn btn-info">Add Here</button>
-      
+      <button>click here</button>
       </div>
   
     </div>
